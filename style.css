@@ -158,10 +158,15 @@ a{
     cursor: pointer;
 }
 
-
-#btn-hero{
-    width: 18%;
+.btn-group-hire{
+    display: inline-flex;
+    gap: 2rem;
 }
+
+
+/* #btn-hero{
+    width: 18%;
+} */
 
 .hero-section-right{
     position: relative;

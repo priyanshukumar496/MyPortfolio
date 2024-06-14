@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/e78ae897cc.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="style.css">
-    <title>My Portfolio - DANNY</title>
+    <title>My Portfolio - Priyanshu</title>
 </head>
 <body>
     <div id="wrapper">
@@ -35,7 +35,11 @@
                     I am a <span class="role"></span>
                 </div>
                 <div class="hero-section-description">I'm a software developer and here is my portfolio website. Here you'll learn about my journey as a software developer.</div>
-                <div class="button" id="btn-hero">Hire Me</div>
+                <div class="btn-group-hire">
+                    <div class="button CV" id="btn-hero">Download CV</div>
+                    <a href="#contactme"><div class="button" id="btn-hero">Hire Me</div></a>
+                </div>
+                
             </div>
             
             <div class="hero-section-right">
@@ -235,6 +239,15 @@
            typeSpeed: 100,
            backSpeed: 80,
            backDelay: 1000,
+        });
+
+        const resume = document.querySelector(".CV");
+
+        resume.addEventListener('click', function() {
+            const link = document.createElement('a');
+            link.href = './images/Updated_Resume.pdf'; 
+            link.download = 'Priyanshu_Resume.pdf'; 
+            link.click();
         });
     </script>
 </body>
